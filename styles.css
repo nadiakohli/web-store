@@ -154,6 +154,7 @@ input.site-search::placeholder {
 .menu-user .user-name {
   margin-left: 15px;
   font-weight: bold;
+  font-size: 21px;
 }
 
 .user-name .short-user-name {
@@ -161,7 +162,7 @@ input.site-search::placeholder {
 }
 
 .menu-user .user-icon i {
-  font-size: 16px;
+  font-size: 21px;
 }
 
 .user {
@@ -175,7 +176,7 @@ input.site-search::placeholder {
 }
 
 .user-name, .add-btn-text, .user {
-  font-size: 21px;
+  font-size: 14px;
   margin: 10px;
 }
 
@@ -227,7 +228,6 @@ input.site-search::placeholder {
 }
 
 .main-info {
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -274,7 +274,6 @@ input.site-search::placeholder {
 }
 
 .products-tab {
-  /* height: 910px; */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -388,6 +387,7 @@ input.site-search::placeholder {
 }
 
 .basket-products {
+
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
@@ -518,7 +518,7 @@ input.site-search::placeholder {
 }
 
 .products-total-price {
-  height: 35px;
+  height: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -562,18 +562,9 @@ input.site-search::placeholder {
 }
 
 .main-info-wrap, .info-aside-wrap {
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.main-info-wrap {
-  /* height: 100%; */
-}
-
-.info-aside-wrap {
-  /* height: 100%; */
 }
 
 .modal-container, .wrap-bg-color {
@@ -588,18 +579,20 @@ input.site-search::placeholder {
   background-color: #000000a2;
 }
 
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal {
-  width: 50%;
-  height: 47%;
+  width: 45%;
+  height: 44%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  top: 25%;
-  transform: translateY(-25%);
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 2;
   padding: 0 10px;
   background-color: #fefefe;
@@ -617,7 +610,7 @@ input.site-search::placeholder {
 }
 
 .modal-header h1, .close-modal i {
-  font-size: 28px;
+  font-size: 24px;
   color: #4b4b4b;
 }
 
@@ -635,12 +628,12 @@ input.site-search::placeholder {
 }
 
 .add-new-customer-btn, .view-customers-btn, .modal-header {
-  height: 60px;
+  height: 55px;
 }
 
 .add-new-customer-btn, .view-customers-btn {
   color: #fff;
-  font-size: 24px;
+  font-size: 21px;
 } 
 
 .add-new-customer-btn {
@@ -662,8 +655,8 @@ input.site-search::placeholder {
 }
 
 .search-customer {
-  height: 50px;
-  font-size: 21px;
+  height: 45px;
+  font-size: 18px;
   padding: 10px 10px;
 }
 
@@ -674,20 +667,530 @@ input.site-search::placeholder {
 
 .search-customer::placeholder {
   color: #808080;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .search-data {
-  font-size: 21px;
-  height: 190px;
+  font-size: 18px;
+  height: 185px;
 }
 
 .search-data::placeholder {
   color: #000;
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
 }
 
 .search-data:disabled {
   background-color: #fff;
+}
+
+/* adaptation */
+@media screen and (max-width: 1440px) {
+  main, aside {
+    margin-left: 10px;
+  }
+
+  aside {
+    margin-right: 10px;
+  }
+  
+  i {
+    font-size: 16px;
+  }
+
+  .wrap-menu-btn {
+    height: 13%;
+  }
+  
+  .user-name .short-user-name {
+    font-size: 16px;
+  }
+  
+  .user-name, .add-btn-text {
+    font-size: 16px;
+  }
+  
+  .user {
+    font-size: 18px;
+  }
+
+  .product-cell button {
+    height: 161px; 
+  }
+
+  .wrap-add-user-btn button {
+    font-size: 16px;
+  }
+
+  .basket-title {
+    height: 35px;
+  }
+
+  .selected-product {
+    height: 44px;
+  }
+  
+  .selected-clothe-icon {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .products-total-price {
+    height: 38px;
+  }
+  
+  .checkout-btn {
+    height: 43px;
+  }
+  
+  .modal {
+    width: 45%;
+  }
+  
+  .modal-header h1, .close-modal i {
+    font-size: 24px;
+  }
+  
+  .modal-body i {
+    padding-right: 10px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn, .modal-header {
+    height: 50px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn {
+    font-size: 21px;
+  } 
+  
+  .search-customer {
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .search-customer::placeholder {
+    font-size: 18px;
+  }
+  
+  .search-data {
+    font-size: 18px;
+    height: 180px;
+  }
+  
+  .search-data::placeholder {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrap-menu-btn {
+    height: 14%;
+  }
+  
+  .product-cell button {
+    height: 136px; 
+  }
+
+  .basket-title {
+    height: 35px;
+  }
+
+  .selected-product {
+    height: 37px;
+  }
+
+  .products-total-price {
+    height: 37px;
+  }
+  
+  .checkout-btn {
+    height: 40px;
+  }
+  
+  .modal {
+    width: 50%;
+    height: 47%;
+  }
+  
+  .modal-header h1, .close-modal i {
+    font-size: 21px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn, .modal-header {
+    height: 37px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn {
+    font-size: 18px;
+  } 
+  
+  .search-customer {
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .search-customer::placeholder {
+    font-size: 16px;
+  }
+  
+  .search-data {
+    font-size: 16px;
+    height: 170px;
+  }
+  
+  .search-data::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+    height: 30px;
+  }
+
+  input.site-search {
+    width: 90%;
+    padding: 4px 11px;
+  }
+
+  input.site-search::placeholder {
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 12px;
+  }
+
+  .menu-user {
+    height: 45px;
+  }
+
+  .menu-user .user-name {
+    font-size: 16px;
+  }
+
+  .menu-user .user-icon i {
+    font-size: 16px;
+  }
+
+  .user-name .short-user-name {
+    font-size: 14px;
+  }
+
+  .main-nav a {
+    height: 40px;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .wrap-menu-btn {
+    height: 11%;
+  }
+
+  .sync-btn, .log-out-btn {
+    height: 35px;
+  }
+
+  .sync-btn button, .log-out-btn button {
+    font-size: 13px;
+  }
+  
+  .product-cell button {
+    height: 112px; 
+  }
+
+  .tabs {
+    height: 25px;
+  }
+
+  .tab-item button {
+    font-size: 16px;
+  }
+
+  .product-name {
+    font-size: 15px;
+  }
+
+  .products-price {
+    font-size: 13px;
+  }
+
+  .products-variations {
+    font-size: 10px;
+  }
+
+  .add-user {
+    height: 38px;
+    padding: 0 15px;
+  }
+
+  .user {
+    font-size: 16px;
+  }
+
+  .basket-title {
+    height: 25px;
+  }
+
+  .basket-title h2 {
+    font-size: 16px;
+  }
+
+  .basket-products {
+    margin: 8px 0;
+  }
+
+  .selected-product {
+    height: 32px;
+  }
+
+  .product-amount {
+    height: 20px;
+    width: 20px;
+    font-size: 11px;
+  }
+
+  .product-cost {
+    font-size: 11px;
+  }
+
+  .products-total-price {
+    height: 30px;
+  }
+
+  .taxes button {
+    font-size: 14px;
+  }
+
+  .total-price-wrap {
+    font-size: 16px;
+  }
+
+  .wrap-product-name {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .checkout-btn {
+    height: 36px;
+    font-size: 14px;
+  }
+  
+  .modal {
+    width: 50%;
+    height: 43%;
+  }
+  
+  .modal-header h1, .close-modal i {
+    font-size: 18px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn, .modal-header {
+    height: 32px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn {
+    font-size: 16px;
+  } 
+  
+  .search-customer {
+    height: 35px;
+    font-size: 14px;
+  }
+  
+  .search-customer::placeholder {
+    font-size: 14px;
+  }
+  
+  .search-data {
+    font-size: 14px;
+    height: 160px;
+  }
+  
+  .search-data::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 20px;
+    height: 30px;
+  }
+
+  header h1 {
+    font-size: 14px;
+  }
+
+  input.site-search {
+    width: 90%;
+    padding: 4px 11px;
+  }
+
+  input.site-search::placeholder {
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 12px;
+  }
+
+  .menu-user {
+    height: 40px;
+  }
+
+  .menu-user .user-name {
+    font-size: 14px;
+  }
+
+  .menu-user .user-icon i {
+    font-size: 14px;
+  }
+
+  .user-name .short-user-name {
+    font-size: 12px;
+  }
+
+  .main-nav a {
+    height: 40px;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .wrap-menu-btn {
+    height: 11%;
+  }
+
+  .sync-btn button, .log-out-btn button {
+    font-size: 11px;
+  }
+  
+  .product-cell button {
+    height: 113px; 
+  }
+  
+  .tab-item button {
+    font-size: 14px;
+  }
+ 
+  .product-name {
+    font-size: 11px;
+  }
+
+  .products-price {
+    font-size: 10px;
+  }
+
+  .products-variations i {
+    font-size: 9px;
+    opacity: 65%;
+  }
+
+  .clothe-icon {
+    width: 38%;
+  }
+
+  .wrap-add-user-btn button {
+    font-size: 14px;
+  }
+
+  .user {
+    font-size: 14px;
+  }
+
+  .basket-title {
+    height: 25px;
+  }
+
+  .basket-title h2 {
+    width: 55%;
+    font-size: 14px;
+  }
+
+  .total-feature {
+    width: 30%;
+  }
+
+  .selected-clothe-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .goods-feature {
+    font-size: 8px;
+  }
+
+  .selected-products-description {
+    width: 60%;
+  }
+
+  .product-details {
+    width: 40%;
+  }
+
+  .product-amount {
+    height: 18px;
+    width: 18px;
+    font-size: 10px;
+  }
+
+  .product-cost {
+    font-size: 10px;
+  }
+
+  .taxes button {
+    font-size: 12px;
+  }
+
+  .total-price-wrap {
+    font-size: 14px;
+  }
+
+  .wrap-product-name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .options-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    width: 58%;
+    height: 45%;
+  }
+  
+  .modal-header h1, .close-modal i {
+    font-size: 16px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn, .modal-header {
+    height: 27px;
+  }
+  
+  .add-new-customer-btn, .view-customers-btn {
+    font-size: 14px;
+  } 
+  
+  .search-customer {
+    height: 30px;
+    font-size: 12px;
+  }
+  
+  .search-customer::placeholder {
+    font-size: 12px;
+  }
+  
+  .search-data {
+    font-size: 12px;
+    height: 150px;
+  }
+  
+  .search-data::placeholder {
+    font-size: 12px;
+  }
 }
