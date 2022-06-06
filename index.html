@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Web store</title>
+</head>
+<body>
+  <div class="wrap-bg-color"></div>
+  <div class="wrap">
+    <header tabindex="0">
+      <button type="button" class="burger-btn" id="menubutton" aria-label="Menu button">
+        <i id="menu-icon" class="fas fa-solid fa-bars"></i>
+      </button>
+        <div class="wrap-burger-menu" role="dialog">
+          <div class="wrap-user-menu">
+            <div class="menu-user" aria-label="current user">
+              <div class="user-icon"><i class="fas fa-solid fa-user"></i></div>
+              <div class="user-name" role="presentation">
+                <div class="full-user-name" role="text">Archie Archie</div>
+                <div class="short-user-name" role="text">archie</div>
+              </div>
+            </div>
+            <nav class="main-nav">
+              <ul id="menu" role="menu" aria-labelledby="menubutton">
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-compact-disc"></i>POS</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-table"></i>Products</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-list-ul"></i>Orders</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-chart-area"></i>Reports</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-solid fa-user"></i>Customers</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-stopwatch"></i>Dashboard</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-cog"></i>Settings</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-keyboard"></i>Stations</a>
+                </li>
+                <li role="presentation"><a role="menuitem" href="#">
+                  <i class="fas fa-flag"></i>Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="wrap-menu-btn" role="option">
+            <div class="sync-btn">
+              <button type="button" aria-pressed="false"><i class="fas fa-sync-alt"></i>Sync Now</button>
+            </div>
+            <div class="log-out-btn">
+              <button type="button" aria-pressed="false"><i class="fas fa-sign-out-alt"></i>Log Out</button>
+            </div>
+          </div>   
+        </div>
+      <h1 tabindex="0">qa pos</h1>
+      <div class="user-panel-wrap" role="option">
+        <div class="user">
+          <button type="button" class="user-name" aria-label="Current user">
+            <i class="fas fa-solid fa-user"></i>
+            archie
+          </button>
+          <button type="button" aria-label="Log out">
+            <i class="fas fa-sign-out-alt"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="container" role="contentinfo">
+      <main>
+        <div class="main-info-wrap">
+          <div class="search-input" role="searchbox">
+            <div class="btn-icons-wrap" role="cell">
+              <button type="button" role="option" aria-label="Add button"><i class="fas fa-plus"></i></button>
+              <button type="button" role="option" aria-label="Search button"><i class="fas fa-search"></i></button>
+              <button type="button" role="option" aria-label="Chevron button"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <input class="site-search" type="search" name="q" placeholder="Search..." minlength="3">
+          </div>
+          <div class="main-info">
+            <div class="tabs" role="doc-part" aria-label="tabs and optional buttons">
+              <div class="btn-icons-wrap" arai-label="optional buttons">
+                <button type="button" aria-label="table button"><i class="fa fa-table"></i></button>
+                <button type="button" aria-label="filter button"><i class="fas fa-sort-amount-down"></i></button>
+              </div>
+              <div class="tab-item selected" aria-label="tab">
+                <button id="tab" type="button" role="tab">Products</button>
+              </div>
+              <div class="tab-item" aria-label="tab">
+                <button type="button" role="tab">Categories</button>
+              </div>
+              <div class="tab-item" aria-label="tab">
+                <button type="button" role="tab">Clothing</button>
+              </div>
+            </div>
+            <div class="products-tab">
+              <div class="product-cell" tabindex="0">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/ballgown.png" alt="Ballgown" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Ballgown</div>
+                    <div class="products-price" tabindex="0">$150.00</div>
+                    <div class="products-variations" tabindex="0"><i>7 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/belt.png" alt="Belt" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Belt</div>
+                    <div class="products-price" tabindex="0">$60.00</div>
+                    <div class="products-variations" tabindex="0"><i>2 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/bowler-hat.png" alt="Bowler hat" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Bowler hat</div>
+                    <div class="products-price" tabindex="0">$55.00</div>
+                    <div class="products-variations" tabindex="0"><i>4 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/corset.png" alt="Corset" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Corset</div>
+                    <div class="products-price" tabindex="0">$86.00</div>
+                    <div class="products-variations" tabindex="0"><i>2 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/dress.png" alt="Dress" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Dress</div>
+                    <div class="products-price" tabindex="0">$100.00</div>
+                    <div class="products-variations" tabindex="0"><i>5 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/t-shirt.png" alt="T-Shirt" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">T-Shirt</div>
+                    <div class="products-price" tabindex="0">$97.00</div>
+                    <div class="products-variations" tabindex="0"><i>2 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/hat.png" alt="Hat" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Hat</div>
+                    <div class="products-price" tabindex="0">$47.00</div>
+                    <div class="products-variations" tabindex="0"><i>2 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img role="img" class="clothe-icon" src="icons-of-goods/jeans.png" alt="Jeans" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Jeans</div>
+                    <div class="products-price" tabindex="0">$79.00</div>
+                    <div class="products-variations" tabindex="0"><i>3 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/rain-boots.png" alt="Rain boots" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Rain boots</div>
+                    <div class="products-price" tabindex="0">$110.00</div>
+                    <div class="products-variations" tabindex="0"><i>2 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/raincoat.png" alt="Raincoat" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Raincoat</div>
+                    <div class="products-price" tabindex="0">$88.00</div>
+                    <div class="products-variations" tabindex="0"><i>5 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0"
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/shorts.png" alt="Shorts" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Shorts</div>
+                    <div class="products-price" tabindex="0">$61.00</div>
+                    <div class="products-variations" tabindex="0"><i>4 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/suit.png" alt="Suit" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Suit</div>
+                    <div class="products-price" tabindex="0">$200.00</div>
+                    <div class="products-variations" tabindex="0"><i>2 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/sport-bra.png" alt="Sport bra" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Sport bra</div>
+                    <div class="products-price" tabindex="0">$45.00</div>
+                    <div class="products-variations" tabindex="0"><i>3 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/sun-hat.png" alt="Sun hat" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Sun hat</div>
+                    <div class="products-price" tabindex="0">$40.00</div>
+                    <div class="products-variations" tabindex="0"><i>6 variations</i></div>
+                  </div>
+                </button>
+              </div>
+              <div class="product-cell">
+                <button type="button" role="cell">
+                  <div class="tooltip" aria-label="tooltip" tabindex="0">
+                    <i class="fa fa-info-circle show-desc"></i>
+                  </div>
+                  <img class="clothe-icon" src="icons-of-goods/trousers.png" alt="Trousers" aria-label="Product image" tabindex="0">
+                  <div class="products-description" aria-label="product name, price and variation" tabindex="0">
+                    <div class="product-name" tabindex="0">Trousers</div>
+                    <div class="products-price" tabindex="0">$90.00</div>
+                    <div class="products-variations" tabindex="0"><i>3 variations</i></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside role="complementary">
+        <div class="info-aside-wrap">
+          <div class="add-user">
+            <div class="wrap-add-user-btn" data-toggle="modal" data-target="#myModal">
+              <button type="button" aria-label="Add customer"><i class="fas fa-solid fa-user green"></i>Add Costumer</button>
+            </div>
+            <div class="user" aria-label="User status">Guest</div>
+          </div>
+          <div class="basket-products" aria-label="basket of goods">
+            <div class="basket-title" aria-label="hedings of basket with filter button">
+              <h2>Product</h2>
+              <div class="total-feature" aria-label="total price and filter button">
+                <h2>Total</h2>
+                <button type="button" aria-label="filter button"><i class="fas fa-sort-amount-down"></i></button>
+              </div>
+            </div>
+            <div class="selected-products" aria-label="selected products">
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/sun-hat.png" alt="Sun hat" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Sun hat</div>
+                    <span class="goods-feature" tabindex="0"><em>size: M color: yellow</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">2</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $80.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/raincoat.png" alt="Raincoat" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Raincoat</div>
+                    <span class="goods-feature" tabindex="0"><em>size: S color: yellow</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">3</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $264.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/rain-boots.png" alt="Rain boots" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Rain boots</div>
+                    <span class="goods-feature" tabindex="0"><em>size: L color: green</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">1</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $110.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/bowler-hat.png" alt="Bowler hat" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Bowler hat</div>
+                    <span class="goods-feature" tabindex="0"><em>size: L color: brown</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">2</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $110.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/suit.png" alt="Suit" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Suit</div>
+                    <span class="goods-feature" tabindex="0"><em>size: M color: blue</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">4</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $800.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/belt.png" alt="Belt" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Belt</div>
+                    <span class="goods-feature" tabindex="0"><em>size: M color: black</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">2</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $120.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/ballgown.png" alt="Ballgown" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Ballgown</div>
+                    <span class="goods-feature" tabindex="0"><em>size: S color: red</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">1</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $150.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/corset.png" alt="Corset" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Corset</div>
+                    <span class="goods-feature" tabindex="0"><em>size: S color: purple</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">5</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $430.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/dress.png" alt="Dress" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Dress</div>
+                    <span class="goods-feature" tabindex="0"><em>size: L color: pink</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">1</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $100.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/t-shirt.png" alt="T-Shirt" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">T-Shirt</div>
+                    <span class="goods-feature" tabindex="0"><em>size: M color: white</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">1</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $97.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/jeans.png" alt="Jeans" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Jeans</div>
+                    <span class="goods-feature" tabindex="0"><em>size: XL color: blue</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">2</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $158.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/sport-bra.png" alt="Sport bra" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Sport bra</div>
+                    <span class="goods-feature" tabindex="0"><em>size: S color: grey</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">3</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $135.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/shorts.png" alt="Shorts" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Shorts</div>
+                    <span class="goods-feature" tabindex="0"><em>size: S color: grey</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">3</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $183.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-product" aria-label="selected product">
+                <div class="selected-products-description">
+                  <img role="img" class="selected-clothe-icon" src="icons-of-goods/trousers.png" alt="Trousers" tabindex="0">
+                  <div aria-label="product name with parameters" tabindex="0">
+                    <div class="product-name" tabindex="0">Trousers</div>
+                    <span class="goods-feature" tabindex="0"><em>size: M color: green</em></span>
+                  </div>
+                </div>
+                <div class="product-details" aria-label="product-details">
+                  <button type="button" class="product-amount" aria-label="product-amount" tabindex="0">6</button>
+                  <div class="product-cost" aria-label="product-cost" tabindex="0">
+                    $540.00
+                  </div>
+                  <div class="additional-options-btn">
+                    <button type="button" aria-label="additional options button" tabindex="0"><i class="fas fa-ellipsis-h"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="products-total-price" aria-label="products total price" tabindex="0">
+                <div class="chevron-up-wrap-btn">
+                  <button type="button" aria-label="chevron up">
+                    <i class="fas fa-chevron-up"></i>
+                  </button> 
+                </div>
+                <div class="taxes">
+                  <button type="button">
+                    <i class="fas fa-external-link-alt" aria-label="external link" tabindex="0"></i>
+                    Includes Taxes
+                  </button>
+                </div>
+                <div class="total-price-wrap" aria-label="total price" tabindex="0">
+                  <div class="total-price-heading" tabindex="0">Total</div>
+                  <div class="total-price" tabindex="0">$3205</div>
+                </div>
+              </div>
+              <div class="wrap-total-price-btn" aria-label="total price button">
+                <div class="options-btn">
+                  <button type="button">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                </div>
+                <button type="button" class="checkout-btn">Checkout $3205</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="modal-container" role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="modal" id="myModal" tabindex="-1">
+      <div class="modal-header">
+        <h1 tabindex="0">Select customer</h1>
+        <button class="close-modal" data-dismiss="modal" aria-label="Close" tabindex="0">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button class="add-new-customer-btn" type="button" tabindex="0">
+          <i class="fas fa-user-plus"></i>
+          Add New Customer
+        </button>
+        <button class="view-customers-btn" type="button" tabindex="0">
+          <i class="fas fa-address-card"></i>
+          View Customers
+        </button>
+        <input type="search" name="search-customer" class="search-customer" placeholder="Search Customers" tabindex="0" >
+        <input type="text" name="searching-data" class="search-data" placeholder="Please enter 3 or more characters" aria-disabled="true" tabindex="0">
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
